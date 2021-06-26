@@ -208,8 +208,16 @@ ul  {
     color: white;
     padding: 0 0 10vh 0;
     margin-top: 5vh;
-
 }
+.home a img {
+    position: fixed;
+    width: 20px;
+    right:2%;
+    bottom:2%;
+    z-index: 6;
+    mix-blend-mode: difference;
+}
+
 
 .identyfikacja-oferta-container, .druk-oferta {
     text-align: center;
@@ -301,6 +309,8 @@ ul  {
 .footer-left {
     margin-left: 5vh;
 }
+
+
 
                                                                     /* MEDIA Q */
 
