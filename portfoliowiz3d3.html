@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+<link rel="stylesheet" href="tiny-slider-master/dist/tiny-slider.css">
+<link rel="stylesheet" href="js/lightbox-plus-jquery.min.js">
+    <link rel="stylesheet" href="stylewiz.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <title>Black Light</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html"> <img src="img/logo.png" alt="LOGO"></a>
+         </div>
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                   <li><a href="main.html#wiz">wizualizacje 3d</a></li>
+                    <li><a href="main.html#iw">identyfikacja wizualna</a></li>
+                    <li><a href="main.html#druk">druk</a></li>
+                    <li><a href="main.html#online">online</a></li>
+                    <li><a href="main.html#kontakt">kontakt</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="wizualizacje3d">
+            <h1>wizualizacje 3D</h1>
+            <p>projektowanie wnętrz • projektowanie stoisk targowych • wizualizacje produktowe</p>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="gallery-text">
+            <div class="opis">
+                <h3>Good Food Bistro</h3>
+                <p>Projekty restauracji w Galerii Krakowskiej.</p>
+            </div>
+            <div class="gallery-nav">
+                <a class="back-project" href="portfoliowiz3d2.html"><img class="backicon" src="img/back2.png" alt="back"></a>
+                <a class="next-project" href="portfoliowiz3d4.html"><img class="nexticon" src="img/next2.png" alt="next"></a>
+            </div>
+        </div>
+        <div  class="my-slider gallery-image ">
+            <a href="img/goodfood/gfbistro.jpg" data-lightbox="image-1" data-title="Good Food Bistro"> <img src="img/goodfood/gfbistro.jpg" alt="wizualizacje3d"></a>
+            <a href="img/goodfood/bistro1.jpg" data-lightbox="image-1" data-title="Good Food Bistro"> <img src="img/goodfood/bistro1.jpg" alt="wizualizacje3d"></a>
+            <a href="img/goodfood/good_food_bistro_03.jpg" data-lightbox="image-1" data-title="Good Food Bistro"> <img src="img/goodfood/good_food_bistro_03.jpg" alt="wizualizacje3d"></a>
+            <a href="img/goodfood/ren144.jpg" data-lightbox="image-1" data-title="Good Food Bistro"> <img src="img/goodfood/ren144.jpg" alt="wizualizacje3d"></a>
+            
+        </div>
+    </div>
+    <div>
+       
+    </div>
+    
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+        import {tns} from './tiny-slider-master/src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.my-slider',
+          
+
+          items: 1,
+          slideBy: 'page',
+          autoplay: true,
+          speed:1900,
+          gutter: 0,
+          controls:false,
+          center:true,
+        nav:false,
+        arrowKeys:true,
+        autoplayButton:false,
+        autoplayButtonOutput:false,
+        mouseDrag:true,
+        preventActionWhenRunning:true,
+        autoHeight:true,
+        autoplayHoverPause:true,
+        
+     
+          
+        });
+        </script>
+
+    <script>
+        lightbox.option({
+          'resizeDuration': 100,
+          'wrapAround': true,
+          'positionFromTop': 50,
+        })
+    </script>
+</body>
