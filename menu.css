@@ -1,9 +1,14 @@
-:root {
-    --primary-color: rgba(0, 0, 0, 0.75);
-    --overlay-color: rgba(15, 16, 17, 0.926);
-    --menu-speed: 0.75s;
-  }
 
+:root {
+  --wiz-color: rgb(4, 102, 201);
+  --iw-color:rgb(252, 223, 4);
+  --drukc-color:rgb(10, 197, 235);
+  --online-color:rgb(231, 25, 18);
+  --kontakt-color:rgb(37, 66, 95);
+  --primary-color: rgba(0, 0, 0, 0.75);
+  --overlay-color: rgba(15, 16, 17, 0.926);
+  --menu-speed: 0.75s;
+}
   .menu-wrap {
     position: fixed;
     top: 15px;
@@ -161,20 +166,23 @@
     transition: color 0.4s ease;
   }
   
-  .menu-wrap .menu > div > div > ul > li:nth-child(1):hover {
-    color: rgb(4, 102, 201);  
-}
+  /* .menu-wrap .menu > div > div > ul > li:nth-child(1):hover {} */
+     
+
 .menu-wrap .menu > div > div > ul > li:nth-child(2):hover {
-    color: rgb(252, 223, 4);  
+      color: rgb(4, 102, 201); 
 }
 .menu-wrap .menu > div > div > ul > li:nth-child(3):hover {
-    color: rgb(10, 197, 235);  
+      color: rgb(252, 223, 4);
 }
 .menu-wrap .menu > div > div > ul > li:nth-child(4):hover {
-    color: rgb(231, 25, 18);  
+      color: rgb(10, 197, 235);
 }
 .menu-wrap .menu > div > div > ul > li:nth-child(5):hover {
-    color: rgb(37, 66, 95);  
+      color: rgb(231, 25, 18);
+}
+.menu-wrap .menu > div > div > ul > li:nth-child(6):hover {
+  color: rgb(37, 66, 95);
 }
 
 @media screen and (max-width: 1200px) {
