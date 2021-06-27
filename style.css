@@ -1,3 +1,4 @@
+
 * {
 margin: 0;
 padding: 0;
@@ -79,32 +80,76 @@ body {
         grid-template-rows: 100vh;
         overflow: hidden;
     }
-    
+    /* kolory */
+    /* kolory- wiz 3D */
     .wizual-cont, .identyfikacja-cont, .druk-cont, .online-cont  {
         position: relative;
         width: 100%;
         overflow: hidden;
+        background-image: url(img/osiedle3.jpg);
+        background-repeat: no-repeat;
+        background-position:100% 0 ;
+        background-size: cover;
+        background-color: rgb(2, 132, 146);
+        filter: grayscale(40%);
+        background-blend-mode:overlay;
     }
-    .wizual-cont img, .identyfikacja-cont img, .druk-cont img, .online-cont img {
-       position: relative;
-       transform: translate(-25%, 0%);
-       height: 100vh;
-       overflow: hidden;
+    .wizual-cont:hover {
+        background-blend-mode:normal;
+        filter: none;
     }
-/*--------------identyfikacja - ustawienie obraska----------*/
-    .identyfikacja-cont img {
-        
-        transform: translate(-50%, 0%);
-     }
-/*--------------druk - ustawienie obraska----------*/
-     .druk-cont img{
-        transform: translate(-30%, 0%);
-     }
-    
+  /* kolory-identyfikacja wizualna */
+    .identyfikacja-cont  {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(img/medica.jpg);
+        background-repeat: no-repeat;
+        background-position:62% 50% ;
+        background-size: cover;
+        background-color: rgb(255, 217, 5);
+        filter: grayscale(1%);
+        background-blend-mode:multiply;
+    }
+    .identyfikacja-cont:hover {
+        background-blend-mode:normal;
+        filter: none; 
+    }
+  /* kolory- druk */
+  .druk-cont  {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(img/druk.jpg);
+    background-repeat: no-repeat;
+    background-position:62% 50% ;
+    background-size: cover;
+    background-color: rgb(102, 196, 247);
+    filter: grayscale(1%);
+    background-blend-mode:multiply;
+}
+.druk-cont:hover {
+    background-blend-mode:normal;
+    filter: none; 
+}
+  /* kolory- online */
+  .online-cont  {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(img/online.jpg);
+    background-repeat: no-repeat;
+    background-position:30% 50% ;
+    background-size: cover;
+    background-color: rgb(196, 17, 5);
+    filter: grayscale(1%);
+    background-blend-mode:multiply;
+}
+.online-cont:hover {
+    background-blend-mode:normal;
+    filter: none; 
+}
 
-    .kolor:hover {
-        display: none;
-     }
 
     .wizual-cont h2, .identyfikacja-cont h2, .druk-cont h2, .online-cont h2 {
         
@@ -124,7 +169,12 @@ body {
         transform: rotate(90deg) ;
        
     }
-
+.link1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
 /*------------------------OFERTA---------------------*/
 
 .oferta-top-container {
@@ -169,7 +219,7 @@ h2 {
     margin: 5vh 0;
     padding: 0 5%;
     line-height: 150%;
-    border-bottom: 8px solid #0962b6;
+    border-bottom: 8px solid var(--wiz-color);
 }
 .col-oferta-1 {
     grid-column: 1/2;
@@ -229,17 +279,17 @@ ul  {
     margin: 5vh 0;
     padding: 0 ;
     line-height: 150%;
-    border-bottom: 8px solid #f5d107;
+    border-bottom: 8px solid var(--iw-color);
 }
 .druk-oferta h2 {
     display: inline-block;
     margin: 5vh 0;
     padding: 0 5%;
     line-height: 150%;
-    border-bottom: 8px solid #04cff3;
+    border-bottom: 8px solid var(--drukc-color);
 }
 .online-kolor h2 {
-    border-bottom: 8px solid #ca2626;
+    border-bottom: 8px solid var(--online-color);
 }
 
 /*-----------------------KONTAKT-------------*/
@@ -254,7 +304,7 @@ ul  {
     margin: 10vh 0;
     padding: 0 5%;
     line-height: 150%;
-    border-bottom: 8px solid #3c556d;
+    border-bottom: 8px solid var(--kontakt-color);
     
 }
 .tel {
@@ -352,24 +402,6 @@ ul  {
         transform: rotate(90deg) ;
         overflow: hidden;
     }
-
-    .nav-links {
-        position: fixed;
-        background:rgb(0, 0, 0);
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: inset(0% 60% 1% 0%);
-        -webkit-clip-path: inset(0% 100% 1% 0%);
-        /*clip-path: circle(100px at 90% -10%);
-            -webkit-clip-path: circle(100px at 10% -1%);*/
-            
-            transition: all 0.8s ease-out;
-            z-index: 3;
-        
-    
-        }
-}
 
 @media screen and (max-width: 570px) {
 
@@ -487,4 +519,4 @@ ul  {
         height:auto;
         margin: 0 0 0 8%;
     }
-}
+}}
