@@ -103,13 +103,13 @@ body {
         position: relative;
         width: 100%;
         overflow: hidden;
-        background-image: url(img/medica.jpg);
+        background-image: url(img/witamedica/wm1.jpg);
         background-repeat: no-repeat;
-        background-position:62% 50% ;
+        background-position:45% 50% ;
         background-size: cover;
-        background-color: rgb(255, 217, 5);
+        background-color: rgb(186, 161, 19);
         filter: grayscale(1%);
-        background-blend-mode:multiply;
+        background-blend-mode:color-dodge;
     }
     .identyfikacja-cont:hover {
         background-blend-mode:normal;
@@ -124,9 +124,9 @@ body {
     background-repeat: no-repeat;
     background-position:62% 50% ;
     background-size: cover;
-    background-color: rgb(102, 196, 247);
+    background-color: rgb(44, 156, 216);
     filter: grayscale(1%);
-    background-blend-mode:multiply;
+    background-blend-mode:overlay;
 }
 .druk-cont:hover {
     background-blend-mode:normal;
@@ -141,9 +141,10 @@ body {
     background-repeat: no-repeat;
     background-position:30% 50% ;
     background-size: cover;
-    background-color: rgb(196, 17, 5);
+    background-color: rgb(196, 56, 5);
     filter: grayscale(1%);
     background-blend-mode:multiply;
+    z-index: 3;
 }
 .online-cont:hover {
     background-blend-mode:normal;
@@ -254,18 +255,22 @@ ul  {
 }
 
 .tlo {
+    
+    
     background-color: rgb(31, 31, 31);
     color: white;
     padding: 0 0 10vh 0;
     margin-top: 5vh;
+    
+    
 }
 .home a img {
     position: fixed;
     width: 20px;
     right:2%;
     bottom:2%;
-    z-index: 6;
-    mix-blend-mode: difference;
+    z-index: 2;
+    
 }
 
 
@@ -506,9 +511,16 @@ ul  {
     .footer-left {
         margin-left: 2vh;
     }
-    
+    .home a img {
+        position: fixed;
+        width: 15px;
+        right:2%;
+        bottom:2%;
+        z-index: 2;
+        
+    }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .logo img {
         position: relative;
         cursor: pointer;
