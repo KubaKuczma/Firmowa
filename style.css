@@ -86,17 +86,21 @@ body {
         position: relative;
         width: 100%;
         overflow: hidden;
-        background-image: url(img/osiedle3.jpg);
+        
+        background-image: url(img/osiedle3a.jpg);
         background-repeat: no-repeat;
         background-position:100% 0 ;
         background-size: cover;
         background-color: rgb(2, 132, 146);
         filter: grayscale(40%);
+        -webkit-filter:grayscale(40%);
+        -moz-filter:grayscale(40%);
         background-blend-mode:overlay;
     }
     .wizual-cont:hover {
         background-blend-mode:normal;
         filter: none;
+        background-image: url(img/osiedle3.jpg);
     }
   /* kolory-identyfikacja wizualna */
     .identyfikacja-cont  {
@@ -107,9 +111,12 @@ body {
         background-repeat: no-repeat;
         background-position:45% 50% ;
         background-size: cover;
-        background-color: rgb(186, 161, 19);
-        filter: grayscale(1%);
+        background-color: rgb(170, 151, 9);
+        filter: saturate(192%);
+        -webkit-filter: saturate(192%);
+        -moz-filter: saturate(192%);
         background-blend-mode:color-dodge;
+        
     }
     .identyfikacja-cont:hover {
         background-blend-mode:normal;
@@ -120,17 +127,22 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-image: url(img/druk.jpg);
+    /* background-image: url(img/druk.jpg); */
+    background-image: url(img/gnom/gnomlogo2.jpg);
     background-repeat: no-repeat;
-    background-position:62% 50% ;
+    background-position:48% 50% ;
     background-size: cover;
-    background-color: rgb(44, 156, 216);
-    filter: grayscale(1%);
-    background-blend-mode:overlay;
+    background-color: rgb(136, 150, 13);
+    filter: saturate(192%);
+    -webkit-filter: saturate(192%);
+    -moz-filter: saturate(192%);
+    background-blend-mode:color-burn;
+    opacity: .8;
 }
 .druk-cont:hover {
     background-blend-mode:normal;
     filter: none; 
+    opacity: 1;
 }
   /* kolory- online */
   .online-cont  {
@@ -143,6 +155,8 @@ body {
     background-size: cover;
     background-color: rgb(196, 56, 5);
     filter: grayscale(1%);
+    -webkit-filter:grayscale(1%);
+    -moz-filter: grayscale(1%);
     background-blend-mode:multiply;
     z-index: 3;
 }
