@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }
 
@@ -52,22 +53,29 @@ body {
 /* SCROLL BAR END */
 
 
-.logo img {
-    width: 200px;
-    height: auto;
-    margin: 29px 0 0 90px;
-}
+
 
 header {
+    position: static;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 
 }
+.logo  {
+    display: flex;
+    align-items: center;
+    justify-self:flex-start;
+    margin-left: 80px;
+    width: 250px;
+    height: auto;
+
+    /* margin: 15px 0 0 80px; */
+}
 
 .wizualizacje3d {
     text-align: right;
-    margin: 0 3vw 0 0
+    margin: 0 3vw 0 0;
 }
 
 .wizualizacje3d p {
@@ -84,14 +92,16 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 32% 68%;
-    grid-template-rows: auto;
+    /* grid-template-columns: 32% 68%; */
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 100vh;
     width: auto;
-    height: 100vh;
+    
+    
    
     align-items: top;
     justify-content: space-between;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgb(120, 210, 243);
 }
 
@@ -114,7 +124,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 5vh;
 }
 
 h3 {
@@ -144,16 +154,26 @@ h3 {
 
 .my-slider a img {
     position: static;
-    width: 115%;
+    width: 120%;
     overflow: hidden;
 }
 
 
 @media screen and (max-width: 1200px) {
+    .logo  {
+        display: flex;
+        align-items: center;
+        justify-self:flex-start;
+        margin-left: 50px;
+        width: 250px;
+        height: auto;
+    
+        /* margin: 15px 0 0 80px; */
+    }
     .logo img {
         width: 150px;
         height: auto;
-        margin: 18px 0 0 50px;
+        margin: 14px 0 0 0px;
     }
 
     header {
@@ -205,7 +225,7 @@ h3 {
         display: flex;
         flex-direction: column-reverse;
         overflow: hidden;
-        height: 80vh;
+        height: 90vh;
     }
 
     .opis {
@@ -219,7 +239,7 @@ h3 {
         align-content: end;
         justify-content: space-between;
         width: 100%;
-        padding: 30px 0;
+        padding: 30px 0 40px 0;
     }
 
     .gallery-image {

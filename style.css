@@ -51,10 +51,10 @@ body {
     .logo img {
         position: relative;
         cursor: pointer;
-        left: 35px;
-        top: 28px;
+        left:15px;
+        top: 38px;
         z-index: 2;
-        width:200px;
+        width:250px;
         height:auto;
         margin: 0 0 0 8%;
     }
@@ -70,6 +70,7 @@ body {
         font-size: 6vw;
         line-height:110%;
         margin: 50% 5% 20% 5vw;
+       
     }
 
     /*------------------PORTFoLIO------------*/
@@ -89,7 +90,7 @@ body {
         
         background-image: url(img/osiedle3a.jpg);
         background-repeat: no-repeat;
-        background-position:100% 0 ;
+        background-position:100% 0;
         background-size: cover;
         background-color: rgb(2, 132, 146);
         filter: grayscale(40%);
@@ -101,6 +102,15 @@ body {
         background-blend-mode:normal;
         filter: none;
         background-image: url(img/osiedle3.jpg);
+       -webkit-transition: .8s ease-in-out;
+        transform: scale(105%);
+        overflow: hidden;
+        z-index: 6;
+    }
+    .wizual-cont:not(:hover){
+        -webkit-transition: .8s ease-in-out;
+        transform: scale(100%);
+
     }
   /* kolory-identyfikacja wizualna */
     .identyfikacja-cont  {
@@ -109,7 +119,7 @@ body {
         overflow: hidden;
         background-image: url(img/witamedica/wm1.jpg);
         background-repeat: no-repeat;
-        background-position:45% 50% ;
+        background-position:45% 50%;
         background-size: cover;
         background-color: rgb(170, 151, 9);
         filter: saturate(192%);
@@ -121,6 +131,14 @@ body {
     .identyfikacja-cont:hover {
         background-blend-mode:normal;
         filter: none; 
+        -webkit-transition: .8s;
+        transform: scale(105%);
+        overflow: hidden;
+        z-index: 6;
+    }
+    .identyfikacja-cont:not(hover){
+        -webkit-transition: .8s ease-in-out;
+        transform: scale(100%);
     }
   /* kolory- druk */
   .druk-cont  {
@@ -132,17 +150,27 @@ body {
     background-repeat: no-repeat;
     background-position:48% 50% ;
     background-size: cover;
-    background-color: rgb(136, 150, 13);
+    background-color: rgb(160, 167, 112);
     filter: saturate(192%);
     -webkit-filter: saturate(192%);
     -moz-filter: saturate(192%);
     background-blend-mode:color-burn;
-    opacity: .8;
+    
 }
 .druk-cont:hover {
     background-blend-mode:normal;
     filter: none; 
-    opacity: 1;
+    -webkit-transition: .8s;
+    transform: scale(105%);
+    overflow: hidden;
+    z-index: 6;
+}
+.druk-cont:not(hover){
+    -webkit-transition: .8s ease-in-out;
+    transform: scale(100%);
+    
+    
+
 }
   /* kolory- online */
   .online-cont  {
@@ -158,11 +186,15 @@ body {
     -webkit-filter:grayscale(1%);
     -moz-filter: grayscale(1%);
     background-blend-mode:multiply;
-    z-index: 3;
+    z-index: 2;
 }
 .online-cont:hover {
     background-blend-mode:normal;
     filter: none; 
+    -webkit-transition: .8s;
+    transform: scale(105%);
+    overflow: hidden;
+    z-index: 6;
 }
 
 
@@ -184,6 +216,12 @@ body {
         transform: rotate(90deg) ;
        
     }
+    /* .wizual-cont h2:hover, .identyfikacja-cont h2:hover, .druk-cont h2:hover, .online-cont h2:hover {
+        
+     -webkit-transition: .5s ;
+      transform: scale(110%);
+       
+    } */
 .link1 {
     position: relative;
     width: 100%;
@@ -280,11 +318,15 @@ ul  {
 }
 .home a img {
     position: fixed;
-    width: 20px;
-    right:2%;
+    width: 40px;
+    right:1%;
     bottom:2%;
-    z-index: 2;
+    z-index: 1;
     
+}
+.home a img:hover {
+    -webkit-transition: .5s ease-in;
+    transform:rotate(720deg);
 }
 
 
@@ -390,7 +432,7 @@ ul  {
         position: relative;
         cursor: pointer;
         left: 25px;
-        top: 15px;
+        top: 10px;
         z-index: 2;
         width:180px;
         height:auto;
@@ -428,7 +470,7 @@ ul  {
         position: relative;
         cursor: pointer;
         left: 30px;
-        top: 18px;
+        top: 12px;
         z-index: 2;
         width:160px;
         height:auto;
@@ -436,9 +478,7 @@ ul  {
     }
    
     .oferta-container {
-     
         text-align: center;
-        
         justify-content: space-evenly;
         padding: 0;
     }
@@ -499,15 +539,12 @@ ul  {
     .footer {
         display:flex;
         align-items: center;
-        
         width:100%;
         height:auto;
         background-color:black;
         justify-content: space-between;
-    
         padding: 45px 0;
     }
-    
     .footer img {
         width: 120px;
         margin: 0 10px;
@@ -515,8 +552,6 @@ ul  {
     .footer-right img {
         width: 50px;
         height:auto;
-        
-    
     }
     .footer-right {
         justify-content: flex-end;
@@ -531,7 +566,6 @@ ul  {
         right:2%;
         bottom:2%;
         z-index: 2;
-        
     }
 }
 @media screen and (max-width: 420px) {
@@ -539,10 +573,22 @@ ul  {
         position: relative;
         cursor: pointer;
         left: 35px;
-        top: 20px;
+        top: 22px;
         z-index: 2;
-        width:120px;
+        width:100px;
         height:auto;
         margin: 0 0 0 8%;
+    }
+    .wizual-cont h2, .identyfikacja-cont h2, .druk-cont h2, .online-cont h2 {
+        
+        position: absolute;
+        display: block;
+        width: 600px;
+        height: auto;
+        top: 300px;
+        right: 0px;
+        left: -285px;
+        line-height:100%;
+        font-size: 3em;
     }
 }}
