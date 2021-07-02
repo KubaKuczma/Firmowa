@@ -267,17 +267,17 @@ h2 {
     text-align: center;
     column-gap: 8vw;
     justify-content: space-evenly;
-    padding: 3vh 5vw;
+    padding: 10vh 5vw;
 }
 .wizualizacje-3d {
     text-align: center;
     grid-column: 1/4;
-    margin: 10vh 0;
+    
 }
 .wizualizacje-3d h2 {
     display: inline-block;
     margin: 5vh 0;
-    padding: 0 5%;
+    padding: 0 2vw;
     line-height: 150%;
     border-bottom: 8px solid var(--wiz-color);
 }
@@ -341,19 +341,27 @@ ul  {
 .identyfikacja-oferta-container, .druk-oferta {
     text-align: center;
     grid-column: 1/4;
-    margin: 10vh 15vw;
+    margin: 0 15vw;
 }
-.identyfikacja-oferta-container h2 {
+.identyfikacja-oferta-container h2  {
     display: inline-block;
     margin: 5vh 0;
-    padding: 0 ;
+    padding: 0 2vw;
     line-height: 150%;
     border-bottom: 8px solid var(--iw-color);
+}
+.identyfikacja-oferta-container p {
+    margin-bottom: 5vh;
+}
+.druk-oferta {
+    text-align: center;
+    grid-column: 1/4;
+    margin: 0 15vw;
 }
 .druk-oferta h2 {
     display: inline-block;
     margin: 5vh 0;
-    padding: 0 5%;
+    padding: 0 2vw;
     line-height: 150%;
     border-bottom: 8px solid var(--drukc-color);
 }
@@ -367,25 +375,64 @@ ul  {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10vh 0 0;
 }
+
+
 .kontakt-container h2{
     display: inline-block;
-    margin: 10vh 0;
-    padding: 0 5%;
+    margin: 5vh 0;
+    padding: 0 2vw;
     line-height: 150%;
     border-bottom: 8px solid var(--kontakt-color);
-    
 }
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 5vh;
+}
+.jk-kontakt, .jz-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.kubafoto img, .asiafoto img {
+    width: 160px;
+    height: auto;
+    filter: grayscale(100%) contrast(130%) brightness(120%);
+    -webkit-filter:grayscale(100%) contrast(130%) brightness(120%);
+    -moz-filter: grayscale(100%) contrast(130%) brightness(120%);
+}
+.kubafoto img:hover, .asiafoto img:hover {
+    filter: none; 
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s;
+    transform: scale(105%);
+    overflow: hidden;
+    z-index: 6;
+}
+.kubafoto img:not(:hover),.asiafoto img:not(:hover) {
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s;
+    transform: scale(100%);
+}
+
 .tel {
     display: flex;
     flex-direction: rows;
     align-items: center;
-    padding:10px;
+    padding:0 30px;
+    justify-content: center;
+    
     
 }
-.kontakt-container img{
+.tel img{
     display: block;
-    width:40px;
+    width:35px;
     height:100%;
     margin:  0 10px;
 }
@@ -498,7 +545,7 @@ ul  {
         width: 80vw;
     }
    
-    .identyfikacja-oferta-container h2, .druk-oferta h2, .kontakt-container h2, .wizualizacje-3d h2  {
+    .identyfikacja-oferta-container h2, .kontakt-container h2, .wizualizacje-3d h2  {
         display: inline-block;
         font-weight:800;
         font-size: 2.2em;
@@ -506,6 +553,15 @@ ul  {
         margin: 0 0 8vh 0;
         padding:2vh;
         text-align: center;
+    }
+   .druk-oferta h2, .kontakt-container h2 {
+        display: inline-block;
+        font-weight:800;
+        font-size: 2.2em;
+        line-height:100%;
+        padding:2vh;
+        text-align: center;
+        margin: 0;
     }
     .wizual-cont a img  {
         overflow: hidden;
