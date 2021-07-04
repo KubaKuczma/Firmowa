@@ -432,12 +432,14 @@ ul  {
 }
 .tel img{
     display: block;
-    width:35px;
-    height:100%;
+    width:auto;
+    height:25px;
     margin:  0 10px;
 }
+
 .kontakt-container p {
-    font-size:2em;
+    font-size:1.4em;
+    font-weight: 600;
 }
 
 .kontakt-container iframe {
@@ -592,13 +594,21 @@ ul  {
         margin: 5vh 0;
         padding:2vh
     }
-    .tel {
+    .tel { 
         display: flex;
-        flex-direction: rows;
-        align-items: center;
-        padding:10px 0;
-        font-size: .6em;
         
+        align-items: center;
+        padding 0;
+    } 
+    .tel p {
+        padding: 0;
+    }
+    .mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 5vh;
     }
     .footer {
         display:flex;
